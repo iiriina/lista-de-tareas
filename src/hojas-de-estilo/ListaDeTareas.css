@@ -1,0 +1,26 @@
+.tareas-lista-contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  /* queremos que haya una sola tarea por linea
+   dentro del contenedor, por eso hacemos que si el segundo componente
+   que se agregue se sale fuera del div que lo contiene, que pase abajo
+   a la siguiente linea.
+   van quedando verticalmente las tareas, como esperamos, una debajo de otra.
+   ----tarea1----
+   ----tarea2----
+   ----tarea3----
+     .
+     .
+     .                   */
+  justify-content: center;
+  /* alineamos horizontalmente, no vertical
+   por eso no ponemos align items, porque queremos que las tareas se agreguen
+   arriba jeje ---tarea1---
+               ---tarea2---
+               -
+               -
+               -
+   no queremos que arranque desde el centro a agregar y esten centradas vertical-
+   mente en el div*/
+  marrgin-top: 15px;
+}

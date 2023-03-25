@@ -1,0 +1,40 @@
+.tarea-contenedor{
+  width: 500px;
+  min-height: 65px; /* altura no fija, es la altura minima ya que la tarea
+  puede contener un texto rapido */
+  background-color: #1b1b32;
+  margin: 5px 0;
+  padding: 8px 15px 8px 20px;
+  display: flex;
+  justify-content: space-between; /* pinto */
+  align-items: center;
+  border-radius: 7px; /* para tener las esquinas redondeadas */
+  border: 1px solid white;
+  cursor: pointer; /* manito */
+}
+
+/* Texto de la tarea */
+
+.tarea-texto {
+  width: 100%; /* para que se estire lo mas que se pueda de su contenedor */
+  height: 100%;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  overflow-wrap: anywhere; /* si el texto es muy largo se corta y sigue abajo.
+  se va a agrandar la altura del contenedor cuando pase */
+}
+
+.tarea-icono {
+  width: 25px;
+  height: 25px;
+  margin: 5px;
+}
+
+/* estilo para cuando la tarea se marque como completada: true, se muestre asi tachadito y violeta */
+.tarea-contenedor.completada{
+  /* si el elemento tiene esas 2 clases se aplica el estilo este */
+  background-color: #5a01a7;
+  text-decoration: line-through; /* texto tachado */
+}
+

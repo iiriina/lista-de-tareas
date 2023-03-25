@@ -1,0 +1,38 @@
+/* contenedor principal, contiene al input y al botón */
+
+.tarea-formulario{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+/* formato para el input, donde el usuario ingresa el texto */
+
+.tarea-input{
+  width: 350px;
+  font-size: 18px;
+  background-color: white;
+  padding: 14px 32px 14px 16px;
+  border-radius: 4px 0 0 4px;
+  border: 2px solid #00471b;
+  outline: none; /* ningun 'reborde' ?*/
+
+}
+
+/* el boton para agregar tarea */
+
+.tarea-boton{
+  padding: 16px;
+  font-size: 18px;
+  font-family: Roboto, sans-serif;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer; /* la manito cuando alguien ponga el cursor sobre este boton */
+  outline: none;
+  background: #00471b;
+  color: #fff;
+  text-transform: capitalize; /* hace que la primer letra de cada palabra sea mayuscula
+  y las demas minusculas o las deja igual no sabria decir */
+}
+
